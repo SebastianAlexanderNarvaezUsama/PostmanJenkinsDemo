@@ -1,0 +1,6307 @@
+{
+	"info": {
+		"_postman_id": "f721b2f5-394f-468e-a339-374c40d6318a",
+		"name": "API collector",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28523063",
+		"_collection_link": "https://martian-shuttle-791865-1.postman.co/workspace/SIIAN-App.Pg~6349e1fd-fd63-47d6-b84e-e40f57504a2f/collection/28523063-f721b2f5-394f-468e-a339-374c40d6318a?action=share&source=collection_link&creator=28523063"
+	},
+	"item": [
+		{
+			"name": "Credito_y_Cartera",
+			"item": [
+				{
+					"name": "TipoClienteWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoClienteWebApi/Get/?_=1690986060204",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoClienteWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690986060204"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DestinoCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/DestinoCreditoWebApi/Get/?_=1690986060205",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"DestinoCreditoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690986060205"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AgrupacionCambioCondicionesWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AgrupacionCambioCondicionesWebApi/Get/?_=1690986060206",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AgrupacionCambioCondicionesWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690986060206"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoCreditoWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690986060200",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoCreditoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690986060200"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoCreditoClienteDestinoTasaWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoCreditoClienteDestinoTasaWebApi/ObtenerPorIdtipocredito/?skip=0&take=20&requireTotalCount=true&idtipocredito=1&_=1690986060207",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoCreditoClienteDestinoTasaWebApi",
+								"ObtenerPorIdtipocredito",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "idtipocredito",
+									"value": "1"
+								},
+								{
+									"key": "_",
+									"value": "1690986060207"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoCreditoWebApi/Get/?take=20&skip=20&_=1690986060203",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoCreditoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "skip",
+									"value": "20"
+								},
+								{
+									"key": "_",
+									"value": "1690986060203"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConceptosCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ConceptosCreditoWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690989745572",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ConceptosCreditoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690989745572"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?_=1690989745570",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690989745570"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ImpuestosWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ImpuestosWebApi/Get/?_=1690989745568",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ImpuestosWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690989745568"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoActividadWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoActividadWebApi/Get/?_=1690990460342",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoActividadWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690990460342"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SeccionFormularioWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/SeccionFormularioWebApi/Get/?_=1690990460343",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"SeccionFormularioWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690990460343"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EtapaCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/EtapaCreditoWebApi/Get/?_=1690990460345",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"EtapaCreditoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690990460345"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConceptoFlujoCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ConceptoFlujoCreditoWebApi/Get/?_=1690990460346",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ConceptoFlujoCreditoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690990460346"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConceptosIngresoEgresoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ConceptosIngresoEgresoWebApi/Get/?_=1690990460347",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ConceptosIngresoEgresoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690990460347"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DestinoCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/DestinoCreditoWebApi/?_=1690990460349",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"DestinoCreditoWebApi",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690990460349"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoLocalWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoLocalWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690990460352",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoLocalWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690990460352"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoDocumentoBienInmuebleWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoDocumentoBienInmuebleWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690990460354",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoDocumentoBienInmuebleWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690990460354"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CasoEspecialWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/CasoEspecialWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690990460355",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"CasoEspecialWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690990460355"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MotivoAnulacionWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/MotivoAnulacionWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690990460356",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"MotivoAnulacionWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690990460356"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SectorEconomicoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/SectorEconomicoWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690990460360",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"SectorEconomicoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690990460360"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SubSeccionFormularioWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/SubSeccionFormularioWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690990460361",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"SubSeccionFormularioWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690990460361"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DetalleFlujoCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/DetalleFlujoCreditoWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690990460363",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"DetalleFlujoCreditoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690990460363"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoSolicitudWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoSolicitudWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690992273110",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoSolicitudWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690992273110"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SucursalWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/SucursalWebApi/Get/?_=1690992807052",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"SucursalWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690992807052"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SucursalNumeroPrestamoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/SucursalNumeroPrestamoWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690992807053",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"SucursalNumeroPrestamoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690992807053"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EncuestaPreguntaWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/EncuestaPreguntaWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690992945690",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"EncuestaPreguntaWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690992945690"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EncuestasWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/EncuestasWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690992945689",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"EncuestasWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690992945689"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MetaComercialMesualWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/MetaComercialMesualWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690993499133",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"MetaComercialMesualWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690993499133"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClasificacionUsoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ClasificacionUsoWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690994642402",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ClasificacionUsoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690994642402"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaActividadesCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaActividadesCreditoWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690994920777",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaActividadesCreditoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690994920777"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoVencimientoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoVencimientoWebApi/Get/?_=1690995044295",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoVencimientoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690995044295"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClasificacionUsoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ClasificacionUsoWebApi/Get/?_=1690995044298",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ClasificacionUsoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690995044298"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClasificacionTributariaWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ClasificacionTributariaWebApi/Get/?_=1690995044302",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ClasificacionTributariaWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690995044302"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ServicioWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ServicioWebApi/Get/?_=1690995044303",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ServicioWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690995044303"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoCreditoWebApi/Get/?_=1690996061151",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoCreditoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690996061151"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoCreditoClienteDestinoTasaWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoCreditoClienteDestinoTasaWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690996061155",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoCreditoClienteDestinoTasaWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690996061155"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaCargueDocumentosWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaCargueDocumentosWebApi/Get/?skip=0&take=12&requireTotalCount=true&filter=%5B%5B%22Esanulado%22%2C%22%3D%22%2C%22false%22%5D%2C%22and%22%2C%5B%22Total%22%2C%22%3D%22%2C0%5D%5D&_=1691002543496",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaCargueDocumentosWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "12"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "filter",
+									"value": "%5B%5B%22Esanulado%22%2C%22%3D%22%2C%22false%22%5D%2C%22and%22%2C%5B%22Total%22%2C%22%3D%22%2C0%5D%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691002543496"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaCargueDocumentosWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaCargueDocumentosWebApi/Get/?skip=0&take=12&requireTotalCount=true&_=1690996219645",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaCargueDocumentosWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "12"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690996219645"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaCargueDocumentosWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaCargueDocumentosWebApi/Get/?skip=0&take=12&requireTotalCount=true&_=1690996219644",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaCargueDocumentosWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "12"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690996219644"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DestinoCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/DestinoCreditoWebApi/Get/?_=1690996061153",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"DestinoCreditoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690996061153"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoClienteWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoClienteWebApi/Get/?_=1690996061152",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoClienteWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690996061152"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConceptosCreditoTipoCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ConceptosCreditoTipoCreditoWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690995429481",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ConceptosCreditoTipoCreditoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690995429481"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConceptosCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ConceptosCreditoWebApi/Get/?_=1690995429480",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ConceptosCreditoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690995429480"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoCreditoWebApi/Get/?_=1690995429479",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoCreditoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690995429479"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClasificacionConceptosWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ClasificacionConceptosWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690995044304",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ClasificacionConceptosWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690995044304"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoCreditoClienteDestinoTasaWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoCreditoClienteDestinoTasaWebApi/Get/?_=1690995044299",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoCreditoClienteDestinoTasaWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690995044299"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?_=1690995044296",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690995044296"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConceptosCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ConceptosCreditoWebApi/Get/?_=1690995044294",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ConceptosCreditoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690995044294"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaCreditoMaestroCompletaWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaCreditoMaestroCompletaWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690994814672",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaCreditoMaestroCompletaWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690994814672"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaMigracionClasificacionConceptosWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaMigracionClasificacionConceptosWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690994345638",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaMigracionClasificacionConceptosWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690994345638"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DocumentoCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/DocumentoCreditoWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690994251806",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"DocumentoCreditoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690994251806"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LineasFNGWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/LineasFNGWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690994153099",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"LineasFNGWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690994153099"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaPlanServicioAdicionalWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaPlanServicioAdicionalWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690994053733",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaPlanServicioAdicionalWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690994053733"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ServicioAdicionalWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ServicioAdicionalWebApi/?_=1690993979881",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ServicioAdicionalWebApi",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690993979881"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MetaComercialMesualWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/MetaComercialMesualWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690993262766",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"MetaComercialMesualWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690993262766"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SeccionEtapaCreditoformularioWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/SeccionEtapaCreditoformularioWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690990460362",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"SeccionEtapaCreditoformularioWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690990460362"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ParametrosFlujoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ParametrosFlujoWebApi/Get/?_=1690990460359",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ParametrosFlujoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690990460359"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SeccionFormularioWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/SeccionFormularioWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690990460358",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"SeccionFormularioWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690990460358"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AgrupacionCambioCondicionesWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AgrupacionCambioCondicionesWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690990460357",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AgrupacionCambioCondicionesWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690990460357"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoBienInmuebleWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoBienInmuebleWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1690990460353",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoBienInmuebleWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1690990460353"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ParentescoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ParentescoWebApi/?_=1690990460351",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ParentescoWebApi",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690990460351"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MedioPromocionWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/MedioPromocionWebApi/?_=1690990460348",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"MedioPromocionWebApi",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1690990460348"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaSolicitudesCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaSolicitudesCreditoWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691067568231",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaSolicitudesCreditoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691067568231"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaNumeracionFaltantePagareWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaNumeracionFaltantePagareWebApi/Get/?skip=0&take=20&requireTotalCount=true&sort=%5B%7B%22selector%22%3A%22Nropagare%22%2C%22desc%22%3Atrue%7D%5D&_=1691067670363",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaNumeracionFaltantePagareWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "sort",
+									"value": "%5B%7B%22selector%22%3A%22Nropagare%22%2C%22desc%22%3Atrue%7D%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691067670363"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CalificacionWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/CalificacionWebApi/?_=1691067991667",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"CalificacionWebApi",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691067991667"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CalificacionInternaWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/CalificacionInternaWebApi/?_=1691067991668",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"CalificacionInternaWebApi",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691067991668"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TransaccionWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TransaccionWebApi/Get/?_=1691068066091",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TransaccionWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691068066091"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TransaccionPagoAdicionalesWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TransaccionPagoAdicionalesWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691068066092",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TransaccionPagoAdicionalesWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691068066092"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TransaccionPagoAdicionalesWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TransaccionPagoAdicionalesWebApi/Get/?_=1691068147532",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TransaccionPagoAdicionalesWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691068147532"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ServicioWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ServicioWebApi/Get/?_=1691068147533",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ServicioWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691068147533"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TransaccionPagoAdicionalesConceptoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TransaccionPagoAdicionalesConceptoWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691068147534",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TransaccionPagoAdicionalesConceptoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691068147534"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ServicioWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ServicioWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691068303724",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ServicioWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691068303724"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?filter=%5B%22Id%22%2C2005%5D&_=1691068303725",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C2005%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691068303725"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?filter=%5B%22Id%22%2C1961%5D&_=1691068303726",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C1961%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691068303726"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?filter=%5B%22Id%22%2C2166%5D&_=1691068303727",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C2166%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691068303727"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?filter=%5B%22Id%22%2C2588%5D&_=1691068303728",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C2588%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691068303728"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?filter=%5B%22Id%22%2C2690%5D&_=1691068303729",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C2690%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691068303729"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?filter=%5B%22Id%22%2C2691%5D&_=1691068303730",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C2691%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691068303730"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?filter=%5B%22Id%22%2C2690%5D&_=1691068303731",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C2690%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691068303731"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?filter=%5B%22Id%22%2C2698%5D&_=1691068303732",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C2698%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691068303732"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?filter=%5B%22Id%22%2C2180%5D&_=1691068303733",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C2180%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691068303733"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?filter=%5B%22Id%22%2C2318%5D&_=1691068303734",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C2318%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691068303734"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?filter=%5B%22Id%22%2C2674%5D&_=1691068303735",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C2674%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691068303735"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?filter=%5B%22Id%22%2C2711%5D&_=1691068303736",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C2711%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691068303736"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?filter=%5B%22Id%22%2C2527%5D&_=1691068303737",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C2527%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691068303737"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?filter=%5B%22Id%22%2C2643%5D&_=1691068303738",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C2643%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691068303738"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?filter=%5B%22Id%22%2C2691%5D&_=1691068303739",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C2691%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691068303739"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?filter=%5B%22Id%22%2C2319%5D&_=1691068303740",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C2319%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691068303740"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?filter=%5B%22Id%22%2C2507%5D&_=1691068303741",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C2507%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691068303741"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://app.siian.co/api/AuxiliaresWebApi/Get/?filter=%5B%22Id%22%2C2695%5D&_=1691068303743",
+							"protocol": "https",
+							"host": [
+								"app",
+								"siian",
+								"co"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C2695%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691068303743"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?filter=%5B%22Id%22%2C2695%5D&_=1691068303743",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C2695%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691068303743"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoCreditoClienteDestinoTasaWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoCreditoClienteDestinoTasaWebApi/Get/?_=1691069425215",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoCreditoClienteDestinoTasaWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691069425215"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConceptosCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ConceptosCreditoWebApi/Get/?_=1691069425216",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ConceptosCreditoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691069425216"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuxiliaresWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/AuxiliaresWebApi/Get/?_=1691069425217",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"AuxiliaresWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691069425217"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProvisionWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ProvisionWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691069425218",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ProvisionWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691069425218"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CompaniasWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/CompaniasWebApi/Get/?_=1691069608542",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"CompaniasWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691069608542"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoDocumentoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoDocumentoWebApi/Get/?_=1691069608543",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoDocumentoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691069608543"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SucursalWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/SucursalWebApi/Get/?_=1691069608544",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"SucursalWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691069608544"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ParametrosCausacionWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ParametrosCausacionWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691069608545",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ParametrosCausacionWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691069608545"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CompaniasWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/CompaniasWebApi/Get/?_=1691069793274",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"CompaniasWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691069793274"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ParametrosPagoSistemaWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ParametrosPagoSistemaWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691069793275",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ParametrosPagoSistemaWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691069793275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoReestructuracionCarteraWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoReestructuracionCarteraWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691069881523",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoReestructuracionCarteraWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691069881523"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoAbonoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoAbonoWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691069928353",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoAbonoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691069928353"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoDocumentoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoDocumentoWebApi/Get/?_=1691070047815",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoDocumentoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691070047815"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EstadoContableWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/EstadoContableWebApi/Get/?_=1691070047816",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"EstadoContableWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691070047816"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TrasladoCarteraMaestroWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TrasladoCarteraMaestroWebApi/Get/?_=1691070047817",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TrasladoCarteraMaestroWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691070047817"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PrestamoMaestroWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/PrestamoMaestroWebApi/?filter=%5B%22Id%22%2C0%5D&_=1691070167527",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"PrestamoMaestroWebApi",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C0%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691070167527"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoReestructuracionCarteraWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoReestructuracionCarteraWebApi/?filter=%5B%22Id%22%2C0%5D&_=1691070167528",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoReestructuracionCarteraWebApi",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C0%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691070167528"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoSolicitudWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoSolicitudWebApi/Get/?filter=%5B%22Id%22%2C0%5D&_=1691070167529",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoSolicitudWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C0%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691070167529"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaPrestamoConceptoCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaPrestamoConceptoCreditoWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691070299006",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaPrestamoConceptoCreditoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691070299006"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaReestructuradosWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaReestructuradosWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691070355872",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaReestructuradosWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691070355872"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaPrestamoCambioConceptoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaPrestamoCambioConceptoWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691070417438",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaPrestamoCambioConceptoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691070417438"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PrestamoMaestroWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/PrestamoMaestroWebApi/Get/?filter=%5B%22Id%22%2C0%5D&_=1691070496888",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"PrestamoMaestroWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C0%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691070496888"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaDetallePrestamoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaDetallePrestamoWebApi/GetItems/0",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaDetallePrestamoWebApi",
+								"GetItems",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaMoraDiariaWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaMoraDiariaWebApi/GetMora/0",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaMoraDiariaWebApi",
+								"GetMora",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaSolicitudesRechazadasWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaSolicitudesRechazadasWebApi/GetTercero/0",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaSolicitudesRechazadasWebApi",
+								"GetTercero",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaTerceroPorAsesorWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaTerceroPorAsesorWebApi/Get/?filter=%5B%22Id%22%2C0%5D&_=1691070496889",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaTerceroPorAsesorWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "%5B%22Id%22%2C0%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691070496889"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PrestamoConceptoCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/PrestamoConceptoCreditoWebApi/GetItems/?skip=0&take=20&idPrestamo=0&_=1691070496890",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"PrestamoConceptoCreditoWebApi",
+								"GetItems",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "idPrestamo",
+									"value": "0"
+								},
+								{
+									"key": "_",
+									"value": "1691070496890"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaPlanPagosWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaPlanPagosWebApi/GetPorPrestamo/?idPrestamo=0&_=1691070496891",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaPlanPagosWebApi",
+								"GetPorPrestamo",
+								""
+							],
+							"query": [
+								{
+									"key": "idPrestamo",
+									"value": "0"
+								},
+								{
+									"key": "_",
+									"value": "1691070496891"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaSaldosCarteraAsesorWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaSaldosCarteraAsesorWebApi/Get/?_=1691071058448",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaSaldosCarteraAsesorWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691071058448"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReporteExperianWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ReporteExperianWebApi/Get/?skip=0&take=20&requireTotalCount=true&sort=%5B%7B%22selector%22%3A%22Fechacorte%22%2C%22desc%22%3Atrue%7D%5D&_=1691071204698",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ReporteExperianWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "sort",
+									"value": "%5B%7B%22selector%22%3A%22Fechacorte%22%2C%22desc%22%3Atrue%7D%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691071204698"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReporteTransunionWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ReporteTransunionWebApi/Get/?skip=0&take=20&requireTotalCount=true&sort=%5B%7B%22selector%22%3A%22Fechacorte%22%2C%22desc%22%3Atrue%7D%5D&_=1691071246212",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ReporteTransunionWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "sort",
+									"value": "%5B%7B%22selector%22%3A%22Fechacorte%22%2C%22desc%22%3Atrue%7D%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691071246212"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaArchivoBancolombiaWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaArchivoBancolombiaWebApi/Get/?_=1691071441089",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaArchivoBancolombiaWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691071441089"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaArchivoEfectyWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaArchivoEfectyWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691071584886",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaArchivoEfectyWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691071584886"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaArchivoBalotoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaArchivoBalotoWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691071644250",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaArchivoBalotoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691071644250"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaArchivoSupergirosWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaArchivoSupergirosWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691071685023",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaArchivoSupergirosWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691071685023"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaInformePpiWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaInformePpiWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691071816801",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaInformePpiWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691071816801"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaObligacionesOtrasEntidadesWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaObligacionesOtrasEntidadesWebApi/Get/?_=1691071920369",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaObligacionesOtrasEntidadesWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691071920369"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaPrestamoConceptoCreditoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaPrestamoConceptoCreditoWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691072187900",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaPrestamoConceptoCreditoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691072187900"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaTercerosPrestamoSaldoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaTercerosPrestamoSaldoWebApi/Get/?skip=0&take=20&requireTotalCount=true&totalSummary=%5B%7B%22selector%22%3A%22Saldo%22%2C%22summaryType%22%3A%22sum%22%7D%5D&_=1691072266686",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaTercerosPrestamoSaldoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "totalSummary",
+									"value": "%5B%7B%22selector%22%3A%22Saldo%22%2C%22summaryType%22%3A%22sum%22%7D%5D"
+								},
+								{
+									"key": "_",
+									"value": "1691072266686"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaReestructuradosWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaReestructuradosWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691072341768",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaReestructuradosWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691072341768"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaComportamientoAsesorWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaComportamientoAsesorWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691072392360",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaComportamientoAsesorWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691072392360"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaComportamientoCarteraWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaComportamientoCarteraWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691072433809",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaComportamientoCarteraWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691072433809"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoDocumentoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoDocumentoWebApi/Get/?_=1691072541198",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoDocumentoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691072541198"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EstadoContableWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/EstadoContableWebApi/Get/?_=1691072541199",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"EstadoContableWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691072541199"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TrasladoCarteraMaestroWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TrasladoCarteraMaestroWebApi/Get/?_=1691072541201",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TrasladoCarteraMaestroWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "_",
+									"value": "1691072541201"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaCuotasNoPagoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaCuotasNoPagoWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691072734651",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaCuotasNoPagoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691072734651"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoAbonoWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/TipoAbonoWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691072788921",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"TipoAbonoWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691072788921"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VistaParametrosServiciosFinWebApi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/VistaParametrosServiciosFinWebApi/Get/?skip=0&take=20&requireTotalCount=true&_=1691072834970",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"VistaParametrosServiciosFinWebApi",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "take",
+									"value": "20"
+								},
+								{
+									"key": "requireTotalCount",
+									"value": "true"
+								},
+								{
+									"key": "_",
+									"value": "1691072834970"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Validacion de Status 200."
+		}
+	],
+	"auth": {
+		"type": "bearer"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
